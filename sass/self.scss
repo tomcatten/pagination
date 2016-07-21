@@ -1,0 +1,143 @@
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+p,
+textarea,
+a,
+span,
+input {
+    margin: 0;
+    padding: 0
+}
+
+img {
+    display: block;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f40;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input,
+button {
+    border: 0;
+}
+
+body {
+    color: #1E1E1E;
+    font: 12px 'Microsoft YaHei', 'Hiragino Sans GB', Arial, sans-serif;
+    min-width: 980px;
+}
+
+.pagination {
+    box-sizing: border-box;
+    padding: 40px 20px 0 20px;
+    width: 100%;
+    position: relative;
+    border-top: 1px solid #e5e9ef;
+    border-bottom: 1px solid #e5e9ef;
+    padding: 30px 0;
+    table.listable {
+        width: 100%;
+        margin: 16px 0 20px 0;
+        font-size: 12px;
+        color: #222;
+        border-width: 1px;
+        border-color: #ccd0d7;
+        border-collapse: collapse;
+        box-sizing: border-box;
+    }
+    table.listable th {
+        height: 46px;
+        line-height: 46px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ccd0d7;
+        background-color: #eef0f4;
+    }
+    table.listable tr:nth-child(odd) td {
+        background-color: #fff;
+    }
+    table.listable tr:nth-child(even) td {
+        background-color: #fbfbfb;
+    }
+    table.listable td {
+        width: 114px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #ccd0d7;
+    }
+    table.listable td a {
+        text-decoration: underline;
+        color: #00a1d6;
+        &:hover {
+            color: #f25d8e;
+        }
+    }
+    table.listable td:nth-child(1) {
+        width: 161px;
+    }
+    table.listable td:nth-child(2) {
+        width: 151px;
+    }
+}
+
+.v-page-fast {
+    display: none;
+    position: absolute;
+    bottom: 34px;
+    right: -2px;
+    span {
+        padding: 0 2px;
+        font-size: 12px;
+        color: #99a2aa;
+        display: inline-block;
+    }
+    input {
+        padding: 0 10px;
+        height: 24px;
+        line-height: 24px;
+        margin-top: 7px;
+        font-size: 12px;
+        box-shadow: none;
+        border: 1px solid #ccd0d7;
+        transition: .2s border;
+        text-align: center;
+        margin-left: 5px;
+        width: 30px;
+        border-radius: 4px;
+        color: #99a2aa;
+        display: inline-block;
+        background-color: #fff;
+        &:hover,
+        &:focus {
+            border-color: #00a1d6;
+        }
+    }
+}

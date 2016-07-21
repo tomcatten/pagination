@@ -1,0 +1,13 @@
+-var text = {1:'待支付',2:'交易成功',3:'交易失败'}
+each item in list
+    tr
+        td #{item.orderNo}
+        td= new Date(parseInt(item.ctime)).format('yyyy-MM-dd hh:mm')
+        td #{item.money}元
+        td #{item.months}个月
+        td= new Date(parseInt(item.due_time)).format('yyyy/MM/dd')
+        -if (item.status == 1)
+            td
+                a(href="", target="_blank") 待支付
+        -else
+            td= text[item.status]
